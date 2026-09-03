@@ -243,7 +243,7 @@ Dans cette implémentation :
 
 Chaque archétype possède une manière particulière de transformer l’incertitude.
 
-:::note[Note de design]
+:::design[Note de design]
 Ces Prismes sont volontairement asymétriques. Le but n’est pas qu’ils soient identiques en puissance abstraite, mais qu’ils poussent chaque joueur à rechercher un comportement différent et reconnaissable.
 :::
 
@@ -324,7 +324,7 @@ Le tirage ne répond donc pas seulement à « le plan fonctionne-t-il ? ». Il r
 
 > **Comment le monde transforme-t-il la confiance du Beau Gosse dans son propre plan ?**
 
-:::note[Note de design]
+:::design[Note de design]
 Ce Prisme est volontairement le plus expérimental de cette implémentation. La tendance du Beau Gosse à **séparer le groupe** reste principalement portée par ses mots-clés et la grammaire de pertinence plutôt que par une incitation mécanique aussi forte que celle du Duo Maladroit.
 :::
 

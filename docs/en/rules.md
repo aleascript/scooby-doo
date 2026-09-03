@@ -7,7 +7,7 @@ sidebar_position: 2
 
 # Rules
 
-Scooby-Doo uses a deliberately small Regard configuration. Its identity comes less from an encyclopedia of lore than from what the game teaches the table to notice and from how each archetype transforms uncertainty.
+Scooby-Doo uses a deliberately small [**Regard**](https://aleascript.github.io/regard/) configuration. Its identity comes less from an encyclopedia of lore than from what the game teaches the table to notice and from how each archetype transforms uncertainty.
 
 ## The world in a few lines
 
@@ -205,7 +205,7 @@ This list does not forbid anything else. It simply indicates **where this game l
 
 ## Common rules
 
-Scooby-Doo keeps the general Regard loop.
+Scooby-Doo keeps the general [**Regard**](https://aleascript.github.io/regard/) loop.
 
 1. The player states their **Intention**.
 2. The table clarifies the **Focus** and its **Zoom** if necessary.
@@ -243,7 +243,9 @@ In this implementation:
 
 Each archetype has its own way of transforming uncertainty.
 
+:::note[Design note]
 These Prisms are deliberately asymmetric. The goal is not for them to be identical in abstract power, but for each one to push its player toward a different, recognizable behavior.
+:::
 
 ### The Clumsy Duo — Cross-Resonance
 
@@ -322,7 +324,9 @@ The roll therefore does not merely answer "does the plan work?" It answers:
 
 > **How does the world transform the Handsome Guy's confidence in his own plan?**
 
+:::note[Design note]
 This Prism is deliberately the most experimental in the implementation. The Handsome Guy's tendency to **split up the group** is still carried primarily by his keywords and the grammar of relevance rather than by a mechanical incentive as strong as the Clumsy Duo's.
+:::
 
 ### The Pretty Airhead — Meaningful Accident
 
@@ -389,22 +393,4 @@ A chase is funny as long as it escalates. An investigation is interesting as lon
 
 Once the scene has produced its moment, move on.
 
-## What this implementation tests
-
-Scooby-Doo is deliberately small. It shows that a Resonance implementation through Regard can work with:
-
-- a few paragraphs of lore;
-- sheets made almost entirely of keywords;
-- a grammar of relevance built from a trope rather than a cosmology;
-- asymmetric Prisms;
-- several ways of reading the same D6s;
-- a Prism with a standalone result;
-- minimal preparation;
-- a complete game in one short evening.
-
-The contrast with Glorantha Perspectives is deliberate.
-
-> **Glorantha tests depth.**  
-> **Scooby-Doo tests compression.**
-
-Ready to see it in motion? **[Play The Mystery of the Last Fry Motel](scenario.md).**
+Ready to see it in motion? [**Play The Mystery of the Last Fry Motel**](scenario.md).

@@ -244,7 +244,9 @@ Dans cette implémentation :
 Chaque archétype possède une manière particulière de transformer l’incertitude.
 
 :::design[Note de design]
+
 Ces Prismes sont volontairement asymétriques. Le but n’est pas qu’ils soient identiques en puissance abstraite, mais qu’ils poussent chaque joueur à rechercher un comportement différent et reconnaissable.
+
 :::
 
 ### Le Duo Maladroit — la Résonance croisée

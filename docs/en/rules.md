@@ -325,7 +325,9 @@ The roll therefore does not merely answer "does the plan work?" It answers:
 > **How does the world transform the Handsome Guy's confidence in his own plan?**
 
 :::design[Design note]
+
 This Prism is deliberately the most experimental in the implementation. The Handsome Guy's tendency to **split up the group** is still carried primarily by his keywords and the grammar of relevance rather than by a mechanical incentive as strong as the Clumsy Duo's.
+
 :::
 
 ### The Pretty Airhead — Meaningful Accident

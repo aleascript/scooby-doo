@@ -1,0 +1,164 @@
+:root {
+  --scooby-purple: #6c2ea1;
+  --scooby-purple-deep: #482067;
+  --scooby-green: #b8f13c;
+  --scooby-orange: #ff7a1a;
+  --scooby-night: #20213d;
+  --scooby-cream: #fff8e7;
+  --ifm-color-primary: var(--site-primary);
+  --ifm-background-color: var(--site-background);
+  --ifm-background-surface-color: var(--site-surface);
+  --ifm-font-color-base: var(--site-text);
+  --ifm-font-family-base: var(--site-font-body);
+  --ifm-heading-font-family: var(--site-font-heading);
+  --ifm-heading-font-weight: var(--site-heading-weight);
+  --ifm-font-family-monospace: var(--site-font-mono);
+  --ifm-global-radius: var(--site-radius);
+  --ifm-navbar-shadow: var(--site-navbar-shadow);
+  --ifm-link-color: var(--site-primary);
+  --docusaurus-highlighted-code-line-bg: rgb(108 46 161 / 12%);
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 14%, rgb(184 241 60 / 16%) 0 5rem, transparent 5.1rem),
+    radial-gradient(circle at 92% 31%, rgb(255 122 26 / 12%) 0 7rem, transparent 7.1rem),
+    var(--site-background);
+}
+
+[data-theme='dark'] body {
+  background:
+    radial-gradient(circle at 8% 14%, rgb(184 241 60 / 9%) 0 5rem, transparent 5.1rem),
+    radial-gradient(circle at 92% 31%, rgb(255 122 26 / 8%) 0 7rem, transparent 7.1rem),
+    var(--site-background);
+}
+
+.navbar {
+  background: var(--scooby-purple);
+  border-bottom: 5px solid var(--scooby-green);
+}
+
+.navbar__title,
+.navbar__link,
+.navbar__brand,
+.navbar .clean-btn {
+  color: var(--scooby-cream);
+}
+
+.navbar__title {
+  font-family: var(--site-font-heading);
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--scooby-green);
+}
+
+.theme-doc-markdown {
+  max-width: var(--site-content-width);
+}
+
+.theme-doc-markdown > h1:first-child {
+  color: var(--scooby-purple);
+  font-size: clamp(2.5rem, 7vw, 4.7rem);
+  letter-spacing: -0.055em;
+  line-height: 0.92;
+  text-shadow: 3px 3px 0 rgb(184 241 60 / 55%);
+  transform: rotate(-0.5deg);
+  transform-origin: left center;
+}
+
+[data-theme='dark'] .theme-doc-markdown > h1:first-child {
+  color: var(--scooby-green);
+  text-shadow: 3px 3px 0 rgb(108 46 161 / 85%);
+}
+
+.theme-doc-markdown h2 {
+  border-bottom: 4px solid var(--scooby-orange);
+  padding-bottom: 0.25rem;
+}
+
+.theme-doc-markdown h3 {
+  color: var(--scooby-purple);
+}
+
+[data-theme='dark'] .theme-doc-markdown h3 {
+  color: var(--scooby-green);
+}
+
+.theme-doc-markdown blockquote {
+  border: var(--site-border-width) solid var(--scooby-purple);
+  border-left: 8px solid var(--scooby-orange);
+  border-radius: var(--site-radius);
+  background: var(--site-surface);
+  color: var(--site-text);
+  padding: 1rem 1.2rem;
+  box-shadow: 5px 5px 0 rgb(108 46 161 / 12%);
+}
+
+.theme-doc-markdown img[src*='scooby-gang'] {
+  display: block;
+  width: min(100%, 43rem);
+  margin: 1.3rem auto 2.2rem;
+  border: 5px solid var(--scooby-orange);
+  border-radius: 1.4rem;
+  background: white;
+  box-shadow: 10px 10px 0 rgb(108 46 161 / 22%);
+  transform: rotate(-1deg);
+}
+
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid var(--site-border);
+  border-radius: 0.8rem;
+}
+
+.theme-doc-markdown thead {
+  background: var(--scooby-purple);
+  color: var(--scooby-cream);
+}
+
+.theme-doc-markdown tbody tr:nth-child(even) {
+  background: rgb(184 241 60 / 8%);
+}
+
+.alert {
+  border-width: 2px;
+  border-radius: var(--site-radius);
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: rgb(184 241 60 / 18%);
+  color: var(--scooby-purple-deep);
+  font-weight: 700;
+}
+
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  color: var(--scooby-green);
+}
+
+.pagination-nav__link {
+  border: 2px solid var(--site-border);
+  border-radius: var(--site-radius);
+  background: var(--site-surface);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--scooby-night);
+  border-top: 5px solid var(--scooby-orange);
+}
+
+@media (max-width: 700px) {
+  .theme-doc-markdown > h1:first-child {
+    font-size: 2.7rem;
+  }
+
+  .theme-doc-markdown img[src*='scooby-gang'] {
+    box-shadow: 6px 6px 0 rgb(108 46 161 / 22%);
+  }
+}

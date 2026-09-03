@@ -1,0 +1,36 @@
+{
+  "name": "scooby-doo-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start:fr": "docusaurus start --locale fr",
+    "start:en": "docusaurus start --locale en",
+    "preview": "docusaurus serve --build",
+    "build": "docusaurus build",
+    "build:en": "docusaurus build --locale en",
+    "build:fr": "docusaurus build --locale fr",
+    "check": "npm run typecheck && npm run build",
+    "serve": "docusaurus serve",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@mdx-js/react": "3.1.1",
+    "clsx": "2.1.1",
+    "prism-react-renderer": "2.4.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/tsconfig": "3.10.2",
+    "@docusaurus/types": "3.10.2",
+    "@types/react": "19.2.18",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=20.0"
+  }
+}

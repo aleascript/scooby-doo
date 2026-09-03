@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ![The mystery-solving gang](/img/site/scooby-gang.jpg)
 
-**Scooby-Doo** is a lightweight game built with **Regard**, designed as a compression test for the Resonance design paradigm: how many rules, how much lore and how much preparation can be removed while still producing a strongly characterised experience?
+**Scooby-Doo** is a lightweight game built with [**Regard**](https://aleascript.github.io/regard/), designed as a compression test for the [**Resonance**](https://aleascript.github.io/resonance/) design paradigm: how many rules, how much lore and how much preparation can be removed while still producing a strongly characterised experience?
 
 You are a group of college friends on summer vacation, travelling across the United States in an old van. Inevitably, you stop at abandoned motels, closed amusement parks, haunted mines and other places no reasonable person would ever visit.
 

@@ -99,6 +99,18 @@ body {
   box-shadow: 5px 5px 0 rgb(108 46 161 / 12%);
 }
 
+.theme-admonition-note {
+  border: 2px solid var(--scooby-purple);
+  border-left: 9px solid var(--scooby-green);
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(circle at 94% 18%, rgb(255 122 26 / 22%) 0 1.5rem, transparent 1.6rem),
+    color-mix(in srgb, var(--scooby-green) 10%, var(--site-surface));
+  color: var(--site-text);
+  box-shadow: 6px 6px 0 rgb(108 46 161 / 14%);
+  transform: rotate(0.15deg);
+}
+
 .theme-doc-markdown img[src*='scooby-gang'] {
   display: block;
   width: min(100%, 43rem);
@@ -151,6 +163,15 @@ body {
 .footer--dark {
   --ifm-footer-background-color: var(--scooby-night);
   border-top: 5px solid var(--scooby-orange);
+}
+
+.footer__copyright a {
+  color: var(--scooby-green);
+  font-weight: 700;
+}
+
+.footer__copyright a:hover {
+  color: var(--scooby-orange);
 }
 
 @media (max-width: 700px) {

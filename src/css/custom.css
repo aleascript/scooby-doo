@@ -99,7 +99,7 @@ body {
   box-shadow: 5px 5px 0 rgb(108 46 161 / 12%);
 }
 
-.theme-admonition-design .theme-admonition-note {
+.theme-admonition-design {
   border: 2px solid var(--scooby-purple);
   border-left: 9px solid var(--scooby-green);
   border-radius: 1.2rem;

@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ![La bande de chasseurs de mystères](/img/site/scooby-gang.jpg)
 
-**Scooby-Doo** est un jeu léger construit avec **Regard**, conçu comme un test de compression du paradigme Resonance : combien de règles, de lore et de préparation peut-on retirer tout en conservant une expérience fortement caractérisée ?
+**Scooby-Doo** est un jeu léger construit avec [**Regard**](https://aleascript.github.io/regard/), conçu comme un test de compression du paradigme [**Resonance**](https://aleascript.github.io/resonance/) : combien de règles, de lore et de préparation peut-on retirer tout en conservant une expérience fortement caractérisée ?
 
 Vous êtes une bande de copains de fac en vacances d’été, sillonnant les États-Unis dans un vieux van. Invariablement, vous vous arrêtez devant des motels abandonnés, des parcs d’attractions fermés, des mines hantées et autres endroits où personne de raisonnable n’irait mettre les pieds.
 

@@ -8,6 +8,16 @@ export type SiteLineage = {
   poweredBy: ProjectLink | null;
 };
 
+export type ContentLicense = {
+  label: string;
+  href: string;
+  attribution: {
+    title: string;
+    author: string;
+    href: string | null;
+  };
+};
+
 export type ThemePalette = {
   primary: string;
   background: string;
@@ -55,6 +65,15 @@ export const site = {
     logo: null,
     favicon: null,
   },
+  license: {
+    label: 'CC BY 4.0',
+    href: 'https://creativecommons.org/licenses/by/4.0/',
+    attribution: {
+      title: 'Scooby-Doo',
+      author: 'AleaScript',
+      href: null,
+    },
+  } satisfies ContentLicense,
   lineage: {
     designedWith: {
       label: 'Resonance',

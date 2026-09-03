@@ -243,7 +243,7 @@ In this implementation:
 
 Each archetype has its own way of transforming uncertainty.
 
-:::note[Design note]
+:::design[Design note]
 These Prisms are deliberately asymmetric. The goal is not for them to be identical in abstract power, but for each one to push its player toward a different, recognizable behavior.
 :::
 
@@ -324,7 +324,7 @@ The roll therefore does not merely answer "does the plan work?" It answers:
 
 > **How does the world transform the Handsome Guy's confidence in his own plan?**
 
-:::note[Design note]
+:::design[Design note]
 This Prism is deliberately the most experimental in the implementation. The Handsome Guy's tendency to **split up the group** is still carried primarily by his keywords and the grammar of relevance rather than by a mechanical incentive as strong as the Clumsy Duo's.
 :::
 

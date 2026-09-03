@@ -7,7 +7,7 @@ sidebar_position: 2
 
 # Règles
 
-Scooby-Doo utilise une configuration de Regard volontairement réduite. Son identité vient moins d’une encyclopédie de lore que de ce que le jeu apprend à la table à remarquer et de la manière dont chaque archétype transforme l’incertitude.
+Scooby-Doo utilise une configuration de [**Regard**](https://aleascript.github.io/regard/) volontairement réduite. Son identité vient moins d’une encyclopédie de lore que de ce que le jeu apprend à la table à remarquer et de la manière dont chaque archétype transforme l’incertitude.
 
 ## Le monde en quelques lignes
 
@@ -205,7 +205,7 @@ Cette liste n’interdit rien d’autre. Elle indique simplement **où ce jeu ai
 
 ## Les règles communes
 
-Scooby-Doo conserve la boucle générale de Regard.
+Scooby-Doo conserve la boucle générale de [**Regard**](https://aleascript.github.io/regard/).
 
 1. Le joueur annonce son **Intention**.
 2. La table précise le **Focus** et son **Zoom** si nécessaire.
@@ -243,7 +243,9 @@ Dans cette implémentation :
 
 Chaque archétype possède une manière particulière de transformer l’incertitude.
 
+:::note[Note de design]
 Ces Prismes sont volontairement asymétriques. Le but n’est pas qu’ils soient identiques en puissance abstraite, mais qu’ils poussent chaque joueur à rechercher un comportement différent et reconnaissable.
+:::
 
 ### Le Duo Maladroit — la Résonance croisée
 
@@ -322,7 +324,9 @@ Le tirage ne répond donc pas seulement à « le plan fonctionne-t-il ? ». Il r
 
 > **Comment le monde transforme-t-il la confiance du Beau Gosse dans son propre plan ?**
 
+:::note[Note de design]
 Ce Prisme est volontairement le plus expérimental de cette implémentation. La tendance du Beau Gosse à **séparer le groupe** reste principalement portée par ses mots-clés et la grammaire de pertinence plutôt que par une incitation mécanique aussi forte que celle du Duo Maladroit.
+:::
 
 ### La Belle Nunuche — l’Accident significatif
 
@@ -389,22 +393,4 @@ Une poursuite est drôle tant qu’elle escalade. Une enquête est intéressante
 
 Lorsque la scène a produit son moment, passez à la suivante.
 
-## Ce que cette implémentation teste
-
-Scooby-Doo est volontairement petit. Il montre qu’une implémentation de Resonance à travers Regard peut fonctionner avec :
-
-- quelques paragraphes de lore ;
-- des feuilles presque entièrement constituées de mots-clés ;
-- une grammaire de pertinence fondée sur un trope plutôt que sur une cosmologie ;
-- des Prismes asymétriques ;
-- plusieurs manières de lire les mêmes D6 ;
-- un Prisme à résultat autonome ;
-- une préparation minimale ;
-- une partie complète en une soirée courte.
-
-Le contraste avec Glorantha Perspectives est volontaire.
-
-> **Glorantha teste la profondeur.**  
-> **Scooby-Doo teste la compression.**
-
-Prêts à le voir en action ? **[Jouez Le Mystère du Motel de la Dernière Frite](scenario.md).**
+Prêts à le voir en action ? [**Jouez Le Mystère du Motel de la Dernière Frite**](scenario.md).

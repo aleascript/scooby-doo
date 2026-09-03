@@ -1,3 +1,13 @@
+export type ProjectLink = {
+  label: string;
+  href: string;
+};
+
+export type SiteLineage = {
+  designedWith: ProjectLink | null;
+  poweredBy: ProjectLink | null;
+};
+
 export type ThemePalette = {
   primary: string;
   background: string;
@@ -45,6 +55,16 @@ export const site = {
     logo: null,
     favicon: null,
   },
+  lineage: {
+    designedWith: {
+      label: 'Resonance',
+      href: 'https://aleascript.github.io/resonance/',
+    },
+    poweredBy: {
+      label: 'Regard',
+      href: 'https://aleascript.github.io/regard/',
+    },
+  } as SiteLineage,
   theme: {
     colors: {
       light: {

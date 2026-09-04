@@ -62,8 +62,8 @@ export const site = {
     defaultFullName: 'aleascript/scooby-doo',
   },
   identity: {
-    logo: null,
-    favicon: null,
+    logo: 'img/site/scooby-icon.png',
+    favicon: 'img/site/scooby-icon.png',
   },
   license: {
     label: 'CC BY 4.0',

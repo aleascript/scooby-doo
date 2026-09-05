@@ -10,6 +10,9 @@
     "build": "docusaurus build",
     "build:en": "docusaurus build --locale en",
     "build:fr": "docusaurus build --locale fr",
+    "publication:build": "node tools/build-publications.mjs",
+    "publication:site": "node tools/copy-publications-to-site.mjs",
+    "release:prepare": "node tools/prepare-release.mjs",
     "check": "npm run typecheck && npm run build",
     "serve": "docusaurus serve",
     "typecheck": "tsc"
@@ -29,9 +32,10 @@
     "@docusaurus/tsconfig": "3.10.2",
     "@docusaurus/types": "3.10.2",
     "@types/react": "19.2.18",
+    "@vivliostyle/cli": "^11.2.0",
     "typescript": "6.0.3"
   },
   "engines": {
-    "node": ">=20.0"
+    "node": ">=22.12.0"
   }
 }

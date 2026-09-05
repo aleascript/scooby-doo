@@ -88,7 +88,12 @@ const config: Config = {
     hooks: {onBrokenMarkdownLinks: 'throw'},
   },
   future: {v4: true},
-  customFields: {visualTheme: site.theme},
+  customFields: {
+    visualTheme: site.theme,
+    // Docusaurus localizes siteConfig.baseUrl for non-default locales. Keep the
+    // actual deployment root available for shared, non-localized assets.
+    deploymentBaseUrl: baseUrl,
+  },
   i18n: {
     defaultLocale: site.defaultLocale,
     locales,
@@ -108,7 +113,6 @@ const config: Config = {
           },
         },
         blog: false,
-        pages: false,
         theme: {customCss: './src/css/custom.css'},
       } satisfies Preset.Options,
     ],
@@ -127,6 +131,11 @@ const config: Config = {
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Contents',
+        },
+        {
+          to: '/publications/',
+          label: 'Publications',
+          position: 'left',
         },
         {
           type: 'localeDropdown',

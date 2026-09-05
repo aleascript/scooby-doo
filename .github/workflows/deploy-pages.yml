@@ -15,8 +15,6 @@ concurrency:
 
 jobs:
   build:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -31,25 +29,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Refresh migration package lock
-        if: >-
-          github.event_name == 'pull_request' &&
-          github.event.pull_request.head.repo.full_name == github.repository
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        shell: bash
-        run: |
-          if git diff --quiet -- package-lock.json; then
-            exit 0
-          fi
-          current_sha=$(gh api "repos/${GITHUB_REPOSITORY}/contents/package-lock.json?ref=${GITHUB_HEAD_REF}" --jq .sha)
-          base64 -w0 package-lock.json | jq -Rs \
-            --arg message "build: refresh package lock" \
-            --arg branch "${GITHUB_HEAD_REF}" \
-            --arg sha "${current_sha}" \
-            '{message: $message, content: ., branch: $branch, sha: $sha}' | \
-            gh api --method PUT "repos/${GITHUB_REPOSITORY}/contents/package-lock.json" --input -
 
       - name: Check types
         run: npm run typecheck
